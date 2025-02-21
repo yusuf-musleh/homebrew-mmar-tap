@@ -5,21 +5,21 @@
 class Mmar < Formula
   desc "mmar is a zero-dependancy, self-hostable, cross-platform HTTP tunnel that exposes your localhost to the world on a public URL."
   homepage "https://mmar.dev"
-  version "0.2.1"
+  version "0.2.2"
   license "AGPLv3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yusuf-musleh/mmar/releases/download/v0.2.1/mmar_Darwin_x86_64.tar.gz"
-      sha256 "2505cd2b29793c584b979bf41583048f4497600144f1cab63eb01e3306a76626"
+      url "https://github.com/yusuf-musleh/mmar/releases/download/v0.2.2/mmar_Darwin_x86_64.tar.gz"
+      sha256 "0f3f0d9005086ca5c8d95014831c11616519424f3cf223b0cb180746c5537b66"
 
       def install
         bin.install "mmar"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yusuf-musleh/mmar/releases/download/v0.2.1/mmar_Darwin_arm64.tar.gz"
-      sha256 "2f7869c5aab500c2bbd5d47c9923e56d52842b8f8e97988a9d13af4264dc608a"
+      url "https://github.com/yusuf-musleh/mmar/releases/download/v0.2.2/mmar_Darwin_arm64.tar.gz"
+      sha256 "dfdd1e6c5bd9ba44d9f2450ed58cdee98e013a194cc0d22e8149ef450d3fc912"
 
       def install
         bin.install "mmar"
@@ -30,8 +30,8 @@ class Mmar < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yusuf-musleh/mmar/releases/download/v0.2.1/mmar_Linux_x86_64.tar.gz"
-        sha256 "2b20f93150ef9088e352950d1e823f5b30e5981a3ee5a74b8e8c4b25ac53ac8c"
+        url "https://github.com/yusuf-musleh/mmar/releases/download/v0.2.2/mmar_Linux_x86_64.tar.gz"
+        sha256 "abffa96638cc92b54dd166f31b3cd0f9c03c20709cb49b8db4539e9135fadcab"
 
         def install
           bin.install "mmar"
@@ -40,8 +40,8 @@ class Mmar < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yusuf-musleh/mmar/releases/download/v0.2.1/mmar_Linux_arm64.tar.gz"
-        sha256 "78a8785d079770e4f1d89fadaa56c5b22e340981b0a7329028bfc01bafe1a320"
+        url "https://github.com/yusuf-musleh/mmar/releases/download/v0.2.2/mmar_Linux_arm64.tar.gz"
+        sha256 "b37a69d56863593a7004b3125917631e56db55f89f02cdfea56059ca76e788be"
 
         def install
           bin.install "mmar"
